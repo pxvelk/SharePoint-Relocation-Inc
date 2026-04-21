@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fbff;
+  --foreground: #0c1f39;
+  --surface: #ffffff;
+  --muted: #637286;
+  --border: #d6dde8;
+  --accent: #0c9ead;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-manrope);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope), sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-7xl px-6 lg:px-10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-[#0C1F39] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_10px_20px_rgba(12,31,57,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#102c52] hover:shadow-[0_14px_24px_rgba(12,31,57,0.24)];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-[#0C1F39]/30 bg-white px-6 py-3 text-sm font-semibold text-[#0C1F39] transition duration-300 hover:-translate-y-0.5 hover:border-[#0C1F39] hover:bg-[#f0f5fc];
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-[#0C1F39] md:text-4xl;
+}
+
+.interactive-card {
+  @apply transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(12,31,57,0.14)];
+}
+
+.interactive-chip {
+  @apply transition duration-300 hover:-translate-y-0.5 hover:border-[#0c9ead] hover:text-[#0c9ead];
+}
+
+.interactive-nav-link {
+  @apply relative py-1 text-sm font-medium text-[#0C1F39] transition hover:text-[#0c9ead];
+}
+
+.interactive-nav-link::after {
+  content: "";
+  @apply absolute -bottom-0.5 left-0 h-0.5 w-0 bg-[#0c9ead] transition-all duration-300;
+}
+
+.interactive-nav-link:hover::after {
+  @apply w-full;
 }
