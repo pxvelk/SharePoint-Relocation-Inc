@@ -37,7 +37,7 @@ export async function POST(request: Request) {
 
   const lang = String(payload.lang ?? "en");
   const to = String(payload.email);
-  const admin = process.env.QUOTE_NOTIFICATION_EMAIL ?? "projects@phasepointrelocation.ca";
+  const admin = process.env.QUOTE_NOTIFICATION_EMAIL ?? "info@phasepointrelocation.ca";
 
   const confirmationSubject = lang === "fr" ? "Confirmation de demande - PhasePoint Relocation" : "Quote Request Confirmation - PhasePoint Relocation";
   const confirmationBody =

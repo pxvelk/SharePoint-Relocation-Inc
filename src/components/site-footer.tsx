@@ -48,8 +48,8 @@ export function SiteFooter({ lang }: SiteFooterProps) {
             <a className="block" href={`tel:${t.phone.replace(/[^\d+]/g, "")}`}>
               {t.phone}
             </a>
-            <a className="block" href="mailto:projects@phasepointrelocation.ca">
-              projects@phasepointrelocation.ca
+            <a className="block" href="mailto:info@phasepointrelocation.ca">
+              info@phasepointrelocation.ca
             </a>
             <Link href={toLocalizedPath(lang, "quote")} className="btn-primary mt-3 !bg-[#0c9ead] hover:!bg-[#17aebb]">
               {t.ctas.primary}

@@ -6,8 +6,8 @@ export function getLocalBusinessSchema() {
     description: "Commercial Relocation & Renovation Support",
     slogan: "Move with minimal disruption",
     url: "https://phasepointrelocation.ca",
-    email: "projects@phasepointrelocation.ca",
-    telephone: "+1-514-555-0182",
+    email: "info@phasepointrelocation.ca",
+    telephone: "+1-514-971-6875",
     areaServed: [
       "Montreal",
       "Laval",
@@ -34,8 +34,8 @@ export function getServicesSchema() {
       "@type": "Organization",
       name: "PhasePoint Relocation",
       url: "https://phasepointrelocation.ca",
-      telephone: "+1-514-555-0182",
-      email: "projects@phasepointrelocation.ca",
+      telephone: "+1-514-971-6875",
+      email: "info@phasepointrelocation.ca",
     },
     areaServed: [
       "Montreal",

@@ -25,8 +25,8 @@ export default async function ContactPage({
           <a href={`tel:${t.phone.replace(/[^\d+]/g, "")}`} className="mt-3 block text-lg font-semibold text-[#0C1F39]">
             {t.phone}
           </a>
-          <a href="mailto:projects@phasepointrelocation.ca" className="mt-2 block text-[#516985]">
-            projects@phasepointrelocation.ca
+          <a href="mailto:info@phasepointrelocation.ca" className="mt-2 block text-[#516985]">
+            info@phasepointrelocation.ca
           </a>
           <p className="mt-4 text-sm text-[#516985]">
             {lang === "en"

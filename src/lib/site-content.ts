@@ -34,7 +34,7 @@ export const moveTypesFr = [
 export const content = {
   en: {
     localeLabel: "EN",
-    phone: "+1 (514) 555-0182",
+    phone: "+1 (514) 971-6875",
     slogan: "Move with minimal disruption",
     descriptor:
       "Commercial Relocation, Renovation Support & Office Decommissioning",
@@ -61,7 +61,7 @@ export const content = {
   },
   fr: {
     localeLabel: "FR",
-    phone: "+1 (514) 555-0182",
+    phone: "+1 (514) 971-6875",
     slogan: "Déménagez avec un minimum de perturbations",
     descriptor:
       "Relocalisation commerciale, soutien aux rénovations et décommissionnement",
